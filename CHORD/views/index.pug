@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>ChatExpress | talk to random people</title>
+    <link  type="text/css" href="../chatend/Chord.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@200&display=swap" rel="stylesheet">
+    style 
+        include ../chatend/Chord.css
+
+    //- script 
+    //-     include ../MainFrontEnd/ChordClient.js
+    //- script(src="../MainFrontEnd/ChordClinet.js" type="application/javascript")
+    //- script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js')
+</head>
+<body>
+    <div class="container">
+        <div class="branding">
+            <h3>Chord</h3>
+        </div>
+        <div class="chatbody">
+            <div class="dismessages">
+            </div>
+            <div class="sndmsg">
+                <input type="text" name="inputchat" id="chatinput" placeholder="Start texting over here!">
+                <input type="submit" value="send" id="sendbtn" class="material-symbols-outlined">
+
+                <button class="material-symbols-outlined" id="morebtn">more_vert</button>
+                <div class="moreoptions">
+                    <div class="optionrow">
+                        <div class="Send_Image send">
+                            send image
+                        </div>
+                        <div class="Send_Video send">
+                            send video
+                        </div>
+                        <div class="Send_Document send">
+                            send document
+                        </div>
+                        <div class="Send_Audio send">
+                            send audio
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fileviewer">
+        <span class="material-symbols-outlined" id="closefileviewer">close</span>
+        <div class="filecontent">
+            <div class="info"></div>
+            <div class="preview"></div>
+            <div class="material-symbols-outlined" id="forward">send</div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/<version>/socket.io.js" type="application/javascript"></script>
+<script src="./ChordClient.js" type='application/javascript'></script>
+<!-- <script src="./ChordClient.js"></script> -->
+</html>

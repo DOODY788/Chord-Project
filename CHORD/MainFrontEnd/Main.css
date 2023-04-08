@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@200&family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --border: rgb(3, 3, 3);
+    --activeTab:rgb(255,193,60);
+    --tabinactive:rgb(175, 131, 36);
+    --activeIn:rgb(245,91,127);
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: fit-content;
+}
+.userEntry{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.tabs{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.tab{
+    background-color: aqua;
+    min-width: 15rem;
+    margin: 1rem 0rem 1rem 0rem;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 1px solid var(--border);
+    background-color:var(--tabinactive);
+    user-select: none;
+    cursor: pointer;
+}
+.enter-room{
+    display: none;
+}
+.enter-room form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.create-room{
+    display: none;
+}
+.create-room form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.definput{
+    outline: none;
+    border: 1px solid var(--border);
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: .2s;
+}
+.definput:focus{
+    border: 1px solid var(--activeIn);
+    border-radius: 0.2rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+.defbutton{
+    border: 1px solid var(--border);
+    outline: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 5rem;
+    background-color: var(--activeTab);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: .2s;
+}
+.defbutton:focus{
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 0.3rem;
+}
+.defbutton:hover{
+    border-radius: 0.2rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}

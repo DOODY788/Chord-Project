@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chord! Connect with your friends easily</title>
+    <link rel="stylesheet" href="./Main.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="./mainphone.css">
+    <script defer src="./Main.js"></script>
+</head>
+<body>
+    <div class="body">
+        <div class="portrait">
+            <img src="./connect_people.jpg" alt="Potrait">
+        </div>
+        <div class="userEntry">
+            <div class="tabs">
+                <div class="ent-room-tab tab">Enter Room</div>
+                <div class="crt-room-tab tab">Create Room</div>
+            </div>
+            <div class="contentDisplay">
+                <div class="enter-room">
+                    <form method="get">
+                        <input type="text" placeholder="Enter room port" class="definput" required id="ent-room-code" name="rcode"> 
+                        <input type="button" value="Enter Room" class="defbutton" id="ent-room-sub">
+                    </form>
+                </div>
+                <div class="create-room">
+                    <form action="createRoom/" method="get">
+                        <input type="text" class="definput" placeholder="Enter port value" name="rcode" required>
+                        <input type="text" placeholder="Enter room name" class="definput" required id="crt-room-name" name="rname"> 
+                        <input type="text" class="definput" value="Users count is set to 5" readonly>
+                        <input type="text" class="definput" value="Remember the port number" readonly>
+                        <input type="submit" class="defbutton" id="crt-room-sub">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
